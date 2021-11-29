@@ -10,7 +10,7 @@ $('nav a').click(function (e) {
   var url = $(this).attr('href');
   console.log(url);
   $('#content')
-    .load(url + ' #container', function (response, status, xhr) {
+    .load(url + '#container', function (response, status, xhr) {
       console.log(status);
       console.log(xhr.statusText);
       console.log(response);
