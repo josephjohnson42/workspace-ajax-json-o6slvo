@@ -10,9 +10,9 @@ $('#clickcheck').click(function () {
   console.log('Message is ' + requestData);
 
   $.get(remoteaddr, requestData)
-    .done(function () {
+    .done(function (data) {
       // How to display the data?
-      
+      console.log(data);
     })
     .fail(function () {
       alert('get request failed'); //data will still be saved
